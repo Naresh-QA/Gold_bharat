@@ -11,7 +11,7 @@ public class Registeration_pom extends base_pomclass{
 		super(driver);//extended from basepom class
 	}
 	//locators
-	@FindBy(xpath="xpath=\"//input[@placeholder=' Ex: Retail Gold']\"")
+	@FindBy(xpath="//input[@placeholder=' Ex: Retail Gold']")
 	WebElement BusinessName;
 	@FindBy(xpath="//input[@placeholder=' Ex: Kumar']")
 	WebElement fullname;
@@ -48,8 +48,8 @@ public class Registeration_pom extends base_pomclass{
 	public void setpincode(String Pincode) {
 		pincode.sendKeys(Pincode);
 	}
-	public void setcircle(String Circle) {
-		circle.sendKeys(Circle);
+	public void setcircle() {
+		circle.click();
 	}
 	public void setaddress(String Address) {
 		address.sendKeys(Address);

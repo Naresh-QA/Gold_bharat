@@ -17,8 +17,9 @@ public class Homepage {
 	WebElement Click_register;
 	
 	//action methods
-	public void register() {
+	public void register() throws InterruptedException {
 		Click_register.click();
+		Thread.sleep(5000);
 	}
 
 }
